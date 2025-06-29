@@ -30,3 +30,40 @@ Contaminant-Source-Buffer-Analysis/
 │   └── spatial_analysis_script.py
 │
 └── README.md
+🛠️ Steps Performed
+1. Buffer Analysis
+Tool used: Buffer (Analysis Tools → Proximity → Buffer)
+
+Input: Johnson (facility point data)
+
+Distance: 500 meters
+
+Output: Johnson_Buffer
+
+2. Spatial Join
+Tool used: Spatial Join (Analysis Tools → Overlay → Spatial Join)
+
+Target Feature: Sensitive_Receptors
+
+Join Feature: Johnson_Buffer
+
+Match Option: INTERSECT
+
+Output: Sensitive_Recept_SpatialJoin
+
+Result: Identified which sensitive features (schools, hospitals) are within buffer zones of contaminant sources.
+
+3. Map Layout and Visualization
+Labels added for major facilities and parks.
+
+Categories styled using Facility_T field.
+
+Layout exported to Contaminant_Soure_Layout.png.
+📊 Outputs
+Sensitive_Recept_SpatialJoin layer with joined attributes.
+
+Contaminant_Soure_Layout.png map layout for presentation.
+
+Join_Count attribute indicates number of overlapping buffer zones.
+
+
