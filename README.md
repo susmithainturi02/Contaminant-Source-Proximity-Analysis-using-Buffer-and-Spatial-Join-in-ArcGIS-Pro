@@ -1,0 +1,2 @@
+# Contaminant-Source-Proximity-Analysis-using-Buffer-and-Spatial-Join-in-ArcGIS-Pro
+This GIS project identifies sensitive receptors that are within proximity to contaminant sources by performing Buffer Analysis and Spatial Join in ArcGIS Pro. The workflow demonstrates how to generate buffer zones around identified facilities and spatially analyze which sensitive locations fall within those zones to support risk assessment.
